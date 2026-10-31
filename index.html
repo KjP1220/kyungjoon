@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="박경준의 데이터 분석 및 프로그래밍 프로젝트 포트폴리오">
+  <title>박경준 포트폴리오</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1120;--panel:#141e31;--panel2:#1b2940;--text:#edf3ff;--muted:#a7b5cb;--accent:#67e8f9;--accent2:#818cf8;--line:#2c3b55}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 15% 0%,#17294b 0,transparent 42%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+    a{color:inherit}
+    .hero{padding:82px 22px 70px;text-align:center;background:linear-gradient(125deg,rgba(37,99,235,.82),rgba(8,145,178,.76),rgba(99,102,241,.78));border-bottom:1px solid rgba(255,255,255,.15)}
+    .eyebrow{margin:0 0 12px;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;font-weight:750;color:#e0faff}
+    h1{margin:0;font-size:clamp(2.25rem,6vw,4.2rem);letter-spacing:-.055em;line-height:1.15}
+    .hero p{max-width:650px;margin:20px auto 0;color:#effcff;font-size:clamp(1rem,2.4vw,1.2rem)}
+    .wrap{width:min(100% - 36px,1000px);margin:0 auto;padding:44px 0 70px}
+    .intro{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:30px}
+    .intro h2{font-size:1.45rem;margin:0;letter-spacing:-.03em}
+    .intro p{margin:6px 0 0;color:var(--muted);font-size:.95rem}
+    .count{white-space:nowrap;color:var(--accent);font-size:.9rem;font-weight:700}
+    .timeline{position:relative;padding-left:30px}
+    .timeline:before{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:2px;background:linear-gradient(var(--accent),var(--accent2),#334155)}
+    .project{position:relative;background:linear-gradient(145deg,rgba(27,41,64,.96),rgba(17,27,44,.98));border:1px solid var(--line);border-radius:18px;padding:25px 27px;margin:0 0 22px;box-shadow:0 14px 36px rgba(0,0,0,.17);transition:transform .2s,border-color .2s}
+    .project:hover{transform:translateY(-3px);border-color:#4d7997}
+    .project:before{content:"";position:absolute;left:-31px;top:31px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:4px solid var(--bg);box-shadow:0 0 0 1px var(--accent)}
+    .meta{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-bottom:9px}
+    .date{color:var(--accent);font-weight:800;font-size:.88rem}
+    .badge{font-size:.76rem;color:#c7d2fe;background:rgba(99,102,241,.16);border:1px solid rgba(129,140,248,.25);border-radius:999px;padding:3px 9px}
+    .project h3{font-size:1.32rem;line-height:1.4;margin:0 0 9px;letter-spacing:-.025em}
+    .project p{margin:0;color:#c1cde0}
+    .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+    .tag{font-size:.78rem;background:#26364f;color:#dbeafe;border-radius:7px;padding:4px 9px}
+    .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+    .btn{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:.9rem;font-weight:750;padding:9px 14px;border-radius:9px;background:var(--accent);color:#08202b;transition:filter .2s}
+    .btn:hover{filter:brightness(1.1)}
+    .btn.secondary{background:#26364f;color:#e5edf9;border:1px solid #3b4e6c}
+    footer{text-align:center;padding:26px 20px 38px;color:#8292aa;border-top:1px solid rgba(148,163,184,.14);font-size:.85rem}
+    @media(max-width:600px){.hero{padding:62px 18px 54px}.wrap{width:min(100% - 28px,1000px);padding-top:32px}.intro{align-items:start;flex-direction:column;gap:7px}.timeline{padding-left:23px}.timeline:before{left:5px}.project{padding:20px 18px}.project:before{left:-25px;width:11px;height:11px}.project h3{font-size:1.15rem}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">Portfolio · Projects & Research</p>
+    <h1>박경준 포트폴리오</h1>
+    <p>데이터를 분석하고, 아이디어를 코드로 구현하며 배운 과정을 기록합니다.</p>
+  </header>
+
+  <main class="wrap">
+    <div class="intro">
+      <div><h2>프로젝트 아카이브</h2><p>최근 프로젝트부터 시간순으로 정리했습니다.</p></div>
+      <div class="count">PROJECTS · 6</div>
+    </div>
+
+    <section class="timeline" aria-label="프로젝트 목록">
+      <article class="project">
+        <div class="meta"><span class="date">2025.08 — 2025.10</span><span class="badge">최신 프로젝트</span><span class="badge">데이터 분석 연구</span></div>
+        <h3>세계 경제위기 지표 분석</h3>
+        <p>세계 경제위기와 관련된 지표를 조사하고 분석한 연구 프로젝트입니다. 경제 현상을 데이터 관점에서 살펴보고 지표 사이의 관계를 탐구했습니다.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">데이터 분석</span><span class="tag">경제</span><span class="tag">연구 보고서</span></div>
+        <div class="links"><a class="btn" href="세계_경제위기_지표_분석.pdf" target="_blank" rel="noopener">연구 보고서 보기 ↗</a></div>
+      </article>
+
+      <article class="project">
+        <div class="meta"><span class="date">2025.05.10</span><span class="badge">설문 분석</span></div>
+        <h3>생활습관이 건강에 미치는 영향</h3>
+        <p>생활습관 설문 데이터를 바탕으로 수면, 운동, 외식, 야식 등 여러 요인과 건강 지표 사이의 관계를 살펴본 데이터 분석 연구입니다.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">설문 데이터</span><span class="tag">통계 분석</span><span class="tag">건강</span></div>
+        <div class="links"><a class="btn" href="생활습관이_건강에_미치는_영향.pdf" target="_blank" rel="noopener">보고서 보기 ↗</a></div>
+      </article>
+
+      <article class="project">
+        <div class="meta"><span class="date">2025.01.04</span><span class="badge">프로젝트 발표</span></div>
+        <h3>파이썬 심화 프로젝트 발표 영상</h3>
+        <p>파이썬 심화 자유 프로젝트의 결과물을 소개하는 발표 영상입니다.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">발표</span><span class="tag">영상</span></div>
+        <div class="links"><a class="btn" href="박경준_파이썬심화_발표영상20250104.mp4" target="_blank" rel="noopener">발표 영상 보기 ↗</a><a class="btn secondary" href="토1330_박경준_파이썬심화자유프로젝트.pdf" target="_blank" rel="noopener">프로젝트 자료 보기 ↗</a></div>
+      </article>
+
+      <article class="project">
+        <div class="meta"><span class="date">2024.12</span><span class="badge">개인 프로젝트</span></div>
+        <h3>biblewords — 성경 단어 프로젝트</h3>
+        <p>파이썬 심화 자유 프로젝트로 기획하고, 창과 텍스트 상자 및 버튼을 활용해 프로그램을 구현했습니다.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">GUI</span><span class="tag">개인 프로젝트</span></div>
+        <div class="links"><a class="btn" href="토1330_박경준_파이썬심화자유프로젝트.pdf" target="_blank" rel="noopener">프로젝트 보고서 보기 ↗</a></div>
+      </article>
+
+      <article class="project">
+        <div class="meta"><span class="date">2023 가을</span><span class="badge">팀 프로젝트</span></div>
+        <h3>study_checkup — 자기 성적 관리 시스템</h3>
+        <p>시험 회차별 과목 점수를 입력하고 총점과 평균을 확인할 수 있도록 구상한 학습 관리 프로그램입니다.</p>
+        <div class="tags"><span class="tag">프로그래밍 기초</span><span class="tag">데이터 입력</span><span class="tag">팀 프로젝트</span></div>
+        <div class="links"><a class="btn" href="박경준최영우_발표자료.pdf" target="_blank" rel="noopener">발표 자료 보기 ↗</a></div>
+      </article>
+
+      <article class="project">
+        <div class="meta"><span class="date">2022 가을</span><span class="badge">팀 프로젝트</span></div>
+        <h3>경제의 마블 — 코인션 팀 프로젝트</h3>
+        <p>팀 프로젝트에서 시간 매니저 역할을 맡아 팀원들과 함께 작품을 완성하고 발표 자료를 제작했습니다.</p>
+        <div class="tags"><span class="tag">팀 협업</span><span class="tag">기획</span><span class="tag">발표</span></div>
+        <div class="links"><a class="btn" href="팀프로젝트_코인션_경제의마블_발표자료.pdf" target="_blank" rel="noopener">발표 자료 보기 ↗</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>© 2026 박경준 · Portfolio</footer>
+</body>
+</html>
